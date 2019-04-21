@@ -1,4 +1,5 @@
 # Project Two
 
-#Ideas
+# Ideas
+
 Climate Change App (Climatize ~ Working Title)

@@ -1,5 +1,5 @@
 {
-  "name": "climatize",
+  "name": "green-ups",
   "version": "1.0.0",
   "description": "Providing the most up to data climate change information comes Climatize. Using our website you can figure out what steps you can take to help bring back our environment to a point of stabilty. You can view the latest news regarding climate change and  you can see the most recent changes climate change from aggregated sources of scientific research.   ",
   "main": "server.js",

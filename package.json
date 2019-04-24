@@ -1,0 +1,34 @@
+{
+  "name": "climatize",
+  "version": "1.0.0",
+  "description": "Providing the most up to data climate change information comes Climatize. Using our website you can figure out what steps you can take to help bring back our environment to a point of stabilty. You can view the latest news regarding climate change and  you can see the most recent changes climate change from aggregated sources of scientific research.   ",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "handlebars": "^4.1.2",
+    "mysql": "^2.17.1",
+    "sequelize": "^5.7.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladgolitsyn/ProjectTwo.git"
+  },
+  "keywords": [
+    "climate",
+    "change",
+    "global",
+    "warming"
+  ],
+  "author": "Rahul Vig, Vlad Golitsyn, Kira Helburg. Teddy Passias, Bernadette Cordero-Bension",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladgolitsyn/ProjectTwo/issues"
+  },
+  "homepage": "https://github.com/vladgolitsyn/ProjectTwo#readme"
+}

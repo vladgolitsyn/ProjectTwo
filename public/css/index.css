@@ -25,7 +25,7 @@ header video {
 header .container {
   position: relative;
   z-index: 2;
-  font-family: fantasy;
+  font-family: "Poiret One", cursive;
 }
 
 header .overlay {
@@ -39,12 +39,6 @@ header .overlay {
   z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
-      no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
+.heading {
+  font-size: 150px;
 }

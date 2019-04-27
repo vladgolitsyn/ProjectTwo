@@ -13,7 +13,5 @@ app.set("view engine", "handlebars");
 require("./routes/htmlRoutes.js")(app);
 
 app.listen(PORT, function() {
-  console.log(
-    "Climatize Web App Server listening on: http://localhost:" + PORT
-  );
+  console.log("GreenUp Web App Server listening on: http://localhost:" + PORT);
 });

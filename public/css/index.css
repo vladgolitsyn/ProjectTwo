@@ -8,10 +8,10 @@ GreenUheader {
   width: 100%;
   overflow: hidden;
 }
+
 #carousel {
   border-top: 10px solid #4d9b91;
   border-bottom: 10px solid #4d9b91;
-}
 
 .carousel-item:before {
   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.9);
@@ -68,12 +68,6 @@ GreenUheader {
   object-fit: cover;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
-      no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
+.heading {
+  font-size: 150px;
 }

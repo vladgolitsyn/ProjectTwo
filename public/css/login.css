@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans");
+
+body {
+  background: url("/images/profileBG.jpg");
+  font-family: "Poiret One", cursive;
+}
+
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  font-family: "Poiret One", cursive;
+}
+.login-form h1 {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+}
+
+.login-form input[type="password"],
+.login-form input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #161212;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #535b63;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

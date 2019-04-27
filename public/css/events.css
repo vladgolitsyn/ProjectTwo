@@ -1,0 +1,11 @@
+body {
+    background-image: "/images/events_background.jpg";
+}
+
+h2 {
+    color: darkgreen;
+}
+
+.containerCustom {
+    width: 100%;
+}

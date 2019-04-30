@@ -15,14 +15,18 @@ var PORT = process.env.PORT || 8080;
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-require("./routes/htmlRoutes.js")(app);
-require("./routes/userRoutes.js")(app);
+// require("./routes/htmlRoutes.js")(app);
+// require("./routes/userRoutes.js")(app);
+app.get("/", function(req, res) {
+  res.send("hello");
+});
 
-
-db.sequelize.sync({}).then(function() {
+db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
     console.log(
       "Climatize Web App Server listening on: http://localhost:" + PORT
     );
   });
 });
+
+// db.sequelize.sync({}).then(function() {});

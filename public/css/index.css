@@ -1,6 +1,6 @@
 /* Color Scheme: #CDD7B6 (yellow-green), #4D9B91 (teal), #28353B (dark green) , #F2F3F4 (off-white), #3B3643 (dark purple) */
 
-GreenUheader {
+#GreenUheader {
   position: relative;
   background-color: rgba(0, 0, 0, 0.377);
   height: 75vh;
@@ -12,6 +12,7 @@ GreenUheader {
 #carousel {
   border-top: 10px solid #4d9b91;
   border-bottom: 10px solid #4d9b91;
+}
 
 .carousel-item:before {
   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.9);

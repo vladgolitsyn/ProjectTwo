@@ -15,11 +15,8 @@ var PORT = process.env.PORT || 8080;
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// require("./routes/htmlRoutes.js")(app);
-// require("./routes/userRoutes.js")(app);
-app.get("/", function(req, res) {
-  res.send("hello");
-});
+require("./routes/htmlRoutes.js")(app);
+require("./routes/userRoutes.js")(app);
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {

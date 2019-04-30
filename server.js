@@ -25,5 +25,3 @@ db.sequelize.sync().then(function() {
     );
   });
 });
-
-// db.sequelize.sync({}).then(function() {});

@@ -18,7 +18,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "npm start",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",

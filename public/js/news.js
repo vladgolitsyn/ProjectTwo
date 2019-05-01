@@ -2,6 +2,7 @@ console.log("WE HAVE CONTACT");
 
 ("use strict");
 
+
 //Load today's top news to start
 $(document).ready(function() {
   var queryURL = `https://newsapi.org/v2/top-headlines?q=environment&apiKey=1aade184da6d4c06adbee7c4466c71ed`;
@@ -46,6 +47,7 @@ $("#searchBtn").on("click", function() {
     .trim()
     .toLowerCase();
   var queryURL = `https://newsapi.org/v2/everything?q=${searchTerm}&from=2019-04-28&sortBy=relevance&apiKey=1aade184da6d4c06adbee7c4466c71ed`;
+
 
   $.ajax({
     url: queryURL,

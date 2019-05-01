@@ -1,6 +1,7 @@
 {
   "development": {
     "username": "root",
+    "password": "NY2Cali12!",
     "password": "",
     "database": "greenups_db",
     "host": "127.0.0.1",

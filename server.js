@@ -18,8 +18,7 @@ app.set("view engine", "handlebars");
 require("./routes/htmlRoutes.js")(app);
 require("./routes/userRoutes.js")(app);
 
-
-db.sequelize.sync({}).then(function() {
+db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
     console.log(
       "Climatize Web App Server listening on: http://localhost:" + PORT

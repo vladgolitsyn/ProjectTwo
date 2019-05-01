@@ -1,16 +1,17 @@
 /* Color Scheme: #CDD7B6 (yellow-green), #4D9B91 (teal), #28353B (dark green) , #F2F3F4 (off-white), #3B3643 (dark purple) */
-a {
-  color: #28353b;
-}
 
-body {
-  font-family: "Playfair Display", serif;
+GreenUheader {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.377);
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 #carousel {
   border-top: 10px solid #4d9b91;
   border-bottom: 10px solid #4d9b91;
-}
 
 .carousel-item:before {
   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.9);
@@ -52,12 +53,13 @@ body {
 }
 
 #about {
+  margin-bottom: 75px;
   padding: 45px;
   background: #cdd7b6;
 }
 
-#page-links {
-  margin: 100px auto 100px auto;
+#copyright {
+  text-align: center;
 }
 
 .team-photo {
@@ -68,9 +70,4 @@ body {
 
 .heading {
   font-size: 150px;
-}
-
-.footer {
-  margin-top: 50px;
-  text-align: center;
 }

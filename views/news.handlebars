@@ -2,20 +2,21 @@
 <link rel="stylesheet" href="/css/news.css">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.handlebars"><img src="../public/images/GreenUp_icon.jpg"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="events.handlebars">Get Involved</a>
-            <a class="nav-item nav-link active" href="news.handlebars">Get Informed<span
-                    class="sr-only">(current)</span></a>
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="events.handlebars">Get Involved</a>
+                <a class="nav-item nav-link active" href="news.handlebars">Get Informed<span
+                        class="sr-only">(current)</span></a>
+            </div>
         </div>
-    </div>
 </nav>
-<div id="page-title">
-    <h1>GET INFORMED</h1>
+<div id="title-container">
+    <h1 id="page-title">GET INFORMED</h1>
 </div>
 
 <div id="search-container">
@@ -28,7 +29,9 @@
 </div>
 </div>
 
-<div class="container" id="news-view"></div>
+<div class="container">
+    <div class="container" id="news-view"></div>
+</div>
 
 
 <!-- link to Events javascript file -->

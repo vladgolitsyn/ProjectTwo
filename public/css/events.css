@@ -1,11 +1,12 @@
 body {
-    background-image: "/images/events_background.jpg";
+  background-image: "/images/events_background.jpg";
+  padding: 25px;
 }
 
 h2 {
-    color: darkgreen;
+  color: darkgreen;
 }
 
 .containerCustom {
-    width: 100%;
+  width: 100%;
 }

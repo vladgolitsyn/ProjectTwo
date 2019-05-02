@@ -42,7 +42,7 @@ $("#loginSubmit").on("click", function(event) {
     if (outcome.success === false) {
       alert("Incorrect User Name or Password");
     } else {
-      window.location.href = "/userProfile";
+      window.location.href = "/userProfile" + "?UserEmail=" + currUser.email;
     }
 
     // Reload the page to get the updated list
@@ -66,4 +66,8 @@ $(".logout-btn").on("click", function(event) {
 $("#menu-toggle").click(function(e) {
   e.preventDefault();
   $("#wrapper").toggleClass("toggled");
+});
+
+$(".events").on("click", function() {
+  window.location.href = "/events" + window.location.search;
 });

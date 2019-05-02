@@ -19,6 +19,13 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       }
     },
+    event_category: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
     event_description: {
       type: DataTypes.TEXT,
       allowNull: false,

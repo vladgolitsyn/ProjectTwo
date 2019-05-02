@@ -1,18 +1,7 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  var session = require("express-session");
-
   var loggedInUser;
-
-  app.use(
-    session({
-      secret: "secret",
-      resave: true,
-      saveUninitialized: true,
-      cookie: { secure: true }
-    })
-  );
 
   app.post("/register", function(req, res) {
     console.log(req.body);
@@ -25,6 +14,7 @@ module.exports = function(app) {
           loggedInUser = newUser;
           req.session.loggedin = true;
           req.session.name = req.body.name;
+          req.session.user = req.body.email;
           res.jsonp({ success: true });
         });
       } else {
@@ -44,6 +34,7 @@ module.exports = function(app) {
         console.log("User Logged In");
         loggedInUser = found;
         req.session.loggedin = true;
+        req.session.user = req.body.email;
         res.jsonp({ success: true });
       } else {
         console.log("Incorrect Credentials");
@@ -54,9 +45,8 @@ module.exports = function(app) {
   });
 
   app.get("/userProfile", function(req, res) {
-    console.log(req.session);
-    console.log(loggedInUser.dataValues);
-    console.log(req.session);
+    console.log(loggedInUser);
+    console.log(req.url + "?" + loggedInUser.dataValues.email);
     res.render("userProfile", loggedInUser.dataValues);
   });
 

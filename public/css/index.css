@@ -1,10 +1,17 @@
-/* Color Scheme: #CDD7B6 (yellow-green), #4D9B91 (teal), #28353B (dark green) , #F2F3F4 (off-white), #3B3643 (dark purple) */
+/* Color Scheme: #CDD7B6 (yellow-green), #4D9B91 (teal), #233e4b (dark green/blue) , #F2F3F4 (off-white), #3B3643 (dark purple) */
 a {
-  color: #28353b;
+  color: #2a5366;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
 }
 
 #carousel {
@@ -54,16 +61,20 @@ body {
 #about {
   padding: 45px;
   background: #cdd7b6;
+  font-family: "Open Sans", sans-serif;
 }
 
 #page-links {
-  margin: 100px auto 100px auto;
+  margin: 150px auto 150px auto;
 }
 
 .team-photo {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   object-fit: cover;
+  border-radius: 100%;
+  margin: 20px;
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.35);
 }
 
 .heading {
@@ -71,6 +82,8 @@ body {
 }
 
 .footer {
-  margin-top: 50px;
+  margin-top: 75px;
+  padding-top: 20px;
   text-align: center;
+  background: #f2f3f4;
 }

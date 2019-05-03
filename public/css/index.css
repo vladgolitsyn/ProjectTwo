@@ -66,6 +66,11 @@ body {
   object-fit: cover;
 }
 
+.carousel-item {
+  height: auto;
+  max-width: auto;
+}
+
 .heading {
   font-size: 150px;
 }

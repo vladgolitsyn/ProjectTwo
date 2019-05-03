@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans");
+/* @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans"); */
 
-body {
-  background: url("/images/profileBG.jpg");
-  font-family: "Poiret One", cursive;
-}
+/* body {
+  /* background: url("/images/profileBG.jpg"); */
+  /* background: #cdd7b6; */
+/*} */
 
 .login-form {
   width: 300px;
   margin: 0 auto;
-  font-family: "Poiret One", cursive;
+  /* font-family: "Poiret One", cursive; */
 }
 .login-form h1 {
   text-align: center;

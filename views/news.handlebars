@@ -1,35 +1,53 @@
 <!-- link to CSS stylesheet -->
 <link rel="stylesheet" href="/css/news.css">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/"><img src="../public/images/GreenUp_icon.jpg"></a>
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/events">Get Involved</a>
-                <a class="nav-item nav-link active" href="/news">Get Informed<span class="sr-only">(current)</span></a>
-            </div>
+    <a class="navbar-brand" href="/"><img id="home_icon" src="/images/GreenUp_icon.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/events">Get Involved</a>
+            <a class="nav-item nav-link active" href="/news">Get Informed<span class="sr-only">(current)</span></a>
         </div>
+    </div>
 </nav>
 <div id="title-container">
     <h1 id="page-title">GET INFORMED</h1>
 </div>
 
+
 <div id="search-container">
     <div class="container">
-        <div id="searchInput">Enter a topic to search for related news articles</div>
-        <form class="col-md-12" id="search-form">
-            <input type="text" id="search-input" />
+        <form class="form-inline">
+            <input class="form-control form-control-sm mr-5 w-75" id="search-input" type="text"
+                placeholder="Search for related news articles" aria-label="Search">
             <button type="button" class="btn" id="searchBtn">Search</button>
+        </form>
     </div>
 </div>
-</div>
+
+
+
 
 
 <div class="container" id="news-view"></div>
+
+<div class="container text-center" id="additional-resources">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>USEFUL WEBSITES:</h3>
+            <a class="resource-link" href="https://www.nasa.gov/">NASA</a>
+            <a class="resource-link" href="https://www.sierraclub.org/home">SIERRA CLUB</a>
+            <a class="resource-link" href="https://www.google.com/earth/">GOOGLE EARTH</a>
+            <a class="resource-link" href="https://www.climatecentral.org/">CLIMATE CENTRAL</a>
+            <a class="resource-link" href="https://www.epa.gov/">US ENVIRONMENTAL PROTECTION AGENCY</a>
+            <a class="resource-link" href="http://www.realclimate.org/">REAL CLIMATE</a>
+
+        </div>
+    </div>
+</div>
 
 
 <!-- link to Events javascript file -->

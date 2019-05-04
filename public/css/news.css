@@ -1,3 +1,12 @@
+#home_icon {
+  height: 30px;
+  object-fit: cover;
+}
+
+a {
+  color: #2a5366;
+}
+
 #title-container {
   height: fit-content;
   background: #4d9b91;
@@ -9,6 +18,15 @@
 
 #page-title {
   font-size: 75px;
+}
+
+#additional-resources {
+  padding: 45px;
+}
+
+.resource-link {
+  margin: 10px;
+  padding: 10px;
 }
 
 #resultsTitle {
@@ -30,16 +48,11 @@
   padding: 0px;
 }
 
-a {
-  color: #28353b;
-}
-
 .newsResult {
   border-bottom: #f2f3f4 solid 1px;
   margin: 10px 0px 10px 0px;
-  padding: auto;
+  padding-top: 20px;
   height: 250px;
-
 }
 
 .articleImg {

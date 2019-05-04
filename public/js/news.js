@@ -2,7 +2,6 @@ console.log("WE HAVE CONTACT");
 
 ("use strict");
 
-
 //Load today's top news to start
 $(document).ready(function() {
   var queryURL = `https://newsapi.org/v2/top-headlines?q=environment&apiKey=1aade184da6d4c06adbee7c4466c71ed`;
@@ -40,20 +39,23 @@ $(document).ready(function() {
 });
 
 // Update news results based on user search
-$("#searchBtn").on("click", function() {
+$("#searchBtn").on("click", function(event) {
+  event.preventDefault();
+
   $("#news-view").empty();
   var searchTerm = $("#search-input")
     .val()
     .trim()
+    .replace(/ /g, "+")
     .toLowerCase();
   var queryURL = `https://newsapi.org/v2/everything?q=${searchTerm}&from=2019-04-28&sortBy=relevance&apiKey=1aade184da6d4c06adbee7c4466c71ed`;
-
+  console.log(searchTerm);
 
   $.ajax({
     url: queryURL,
     method: "GET"
   }).then(function(response) {
-    $(".resultsHeader").append("<h3>Search results:");
+    $(".resultsHeader").append("<h3>Search results:</h3>");
     for (var i = 0; i < response.articles.length; i++) {
       $("#news-view").append(
         `<div class="row newsResult">

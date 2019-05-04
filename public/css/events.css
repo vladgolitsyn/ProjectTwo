@@ -1,69 +1,76 @@
 body {
-    background-image: "/images/events_background.jpg";
+  background-image: "/images/events_background.jpg";
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
 }
 
 h2 {
-    color: darkgreen;
+  color: #2a5366;
 }
 
 .containerCustom {
-    width: 100%;
+  width: 100%;
 }
 
 .cardsCustom {
-    font-family: "Poiret One", cursive;
+  font-family: "Poiret One", cursive;
 }
 
 .cardsButtonCustom {
-    color: #4d9b91;
+  color: #4d9b91;
 }
 
 #title-container {
-    height: fit-content;
-    background: #4d9b91;
-    color: white;
-    font-family: "Poiret One", cursive;
-    text-align: center;
-    padding: 45px;
+  height: fit-content;
+  background: #4d9b91;
+  color: white;
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  padding: 45px;
 }
 
 #page-title {
-    font-size: 75px;
+  font-size: 75px;
 }
 
 #resultsTitle {
-    font-family: "Poiret One", cursive;
-    border-bottom: #cdd7b6 solid 2px;
-    margin-bottom: 10px;
+  font-family: "Poiret One", cursive;
+  border-bottom: #cdd7b6 solid 2px;
+  margin-bottom: 10px;
 }
 
 #news-view {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #search-container {
-    background: #cdd7b6;
-    padding: 20px;
+  background: #cdd7b6;
+  padding: 20px;
 }
 
 #search-form {
-    padding: 0px;
+  padding: 0px;
 }
 
 a {
-    color: #28353b;
+  color: #2a5366;
 }
 
 .newsResult {
-    border-bottom: #f2f3f4 solid 1px;
-    margin: 10px 0px 10px 0px;
-    padding: auto;
-    height: 250px;
-
+  border-bottom: #f2f3f4 solid 1px;
+  margin: 10px 0px 10px 0px;
+  padding: auto;
+  height: 250px;
 }
 
 .articleImg {
-    height: 180px;
-    width: 280px;
-    object-fit: cover;
+  height: 180px;
+  width: 280px;
+  object-fit: cover;
 }
